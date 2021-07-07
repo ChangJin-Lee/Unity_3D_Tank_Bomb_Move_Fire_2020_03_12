@@ -17,7 +17,7 @@ public class TurrentCtrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.LeftShift)) //&& (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))) // 컨트롤 + 좌 or 우 화살표 키 누르면 
+        if (Input.GetKey(KeyCode.LeftControl)) //&& (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))) // 컨트롤 + 좌 or 우 화살표 키 누르면 
         {
             h = Input.GetAxis("Horizontal");
 

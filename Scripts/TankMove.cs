@@ -18,7 +18,7 @@ public class TankMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!Input.GetKey(KeyCode.LeftShift))
+        if (!Input.GetKey(KeyCode.LeftControl))
         {
             h = Input.GetAxis("Horizontal");
             v = Input.GetAxis("Vertical");

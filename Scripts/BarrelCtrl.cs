@@ -25,7 +25,7 @@ public class BarrelCtrl : MonoBehaviour
         else if (rotX >= 360 && rotX < 350) transform.eulerAngles = new Vector3(transform.eulerAngles.x -1, transform.eulerAngles.y, transform.eulerAngles.z);
         else if (rotX <= 315 && rotX > 250) transform.eulerAngles = new Vector3(transform.eulerAngles.x +1 , transform.eulerAngles.y, transform.eulerAngles.z);
 
-        if (Input.GetKey(KeyCode.LeftShift) && ( (rotX > 315) || (rotX < 10))) //&& (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))) // 컨트롤 + 좌 or 우 화살표 키 누르면 
+        if (Input.GetKey(KeyCode.LeftControl)) //&& ( (rotX > 315) || (rotX < 10))) //&& (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))) // 컨트롤 + 좌 or 우 화살표 키 누르면 
         {
             v = Input.GetAxis("Vertical");
             //                  x축 기준이라고 생각하면 됨.

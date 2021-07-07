@@ -28,8 +28,9 @@ public class csBombEmitter : MonoBehaviour
 
         if (bombDelay <= 0)
         {
-            float randomX = UnityEngine.Random.Range(720f, 800f);
-            float randomZ = UnityEngine.Random.Range(630f, 710f);
+            // 지형에 따라 범위가 달라짐
+            randomX = UnityEngine.Random.Range(720f, 800f);
+            randomZ = UnityEngine.Random.Range(630f, 710f);
 
             bombPosition = new Vector3(randomX, 30, randomZ);
 
